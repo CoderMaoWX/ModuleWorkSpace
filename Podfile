@@ -1,34 +1,34 @@
 workspace 'ModuleWorkSpace'
 
-xcodeproj 'CommonFrameWork/CommonFrameWork.xcodeproj'
-xcodeproj 'MainProj/MainProj.xcodeproj'
-xcodeproj 'Demo1FrameWork/Demo1FrameWork.xcodeproj'
-xcodeproj 'Demo2FrameWork/Demo2FrameWork.xcodeproj'
+project 'CommonFrameWork/CommonFrameWork.xcodeproj'
+project 'MainProj/MainProj.xcodeproj'
+project 'Demo1FrameWork/Demo1FrameWork.xcodeproj'
+project 'Demo2FrameWork/Demo2FrameWork.xcodeproj'
 
 target :'MainProj' do
     platform :ios, '7.0'
     pod 'AFNetworking'
     pod 'SDWebImage'
-    xcodeproj 'MainProj/MainProj.xcodeproj'
+    project 'MainProj/MainProj.xcodeproj'
 end
 
 target :'CommonFrameWork' do
-platform :ios, '7.0'
-pod 'AFNetworking'
-pod 'SDWebImage'
-xcodeproj 'CommonFrameWork/CommonFrameWork.xcodeproj'
+    platform :ios, '7.0'
+    pod 'AFNetworking'
+    pod 'SDWebImage'
+    project 'CommonFrameWork/CommonFrameWork.xcodeproj'
 end
 
 target :'Demo1FrameWork' do
-platform :ios, '7.0'
-pod 'AFNetworking'
-pod 'SDWebImage'
-xcodeproj 'Demo1FrameWork/Demo1FrameWork.xcodeproj'
+    platform :ios, '7.0'
+    pod 'AFNetworking'
+    pod 'SDWebImage'
+    project 'Demo1FrameWork/Demo1FrameWork.xcodeproj'
 end
 
 target :'Demo2FrameWork' do
-platform :ios, '7.0'
-pod 'AFNetworking'
-pod 'SDWebImage'
-xcodeproj 'Demo2FrameWork/Demo2FrameWork.xcodeproj'
+    platform :ios, '7.0'
+    pod 'AFNetworking'
+    pod 'SDWebImage'
+    project 'Demo2FrameWork/Demo2FrameWork.xcodeproj'
 end
